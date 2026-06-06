@@ -1,0 +1,143 @@
+from pathlib import Path
+
+html = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nathenael Mamo Gebeyehu - Resume</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 font-sans">
+<div class="max-w-6xl mx-auto my-8 shadow-lg bg-white">
+    <div class="grid grid-cols-1 md:grid-cols-10 min-h-screen">
+        
+        <!-- Left Column -->
+        <aside class="md:col-span-3 bg-slate-50 p-8 border-r border-slate-200">
+            <div class="flex flex-col items-center mb-8">
+                <img src="New folder\image\personal image#.png" alt="Profile Photo" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow">
+            </div>
+
+            <section class="mb-8">
+                <h2 class="text-indigo-600 font-bold text-lg uppercase tracking-wide mb-3">Contact</h2>
+                <p class="text-sm text-slate-700">Addis Ababa, Ethiopia</p>
+                <p class="text-sm text-slate-700 break-all">nathenael001mamo@gmail.com</p>
+                <p class="text-sm text-slate-700">+2519 38807882</p>
+                <p class="text-sm text-slate-700">LinkedIn / Portfolio</p>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-indigo-600 font-bold text-lg uppercase tracking-wide mb-3">Skills</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-white border text-sm">UI/UX Design</span>
+                    <span class="px-3 py-1 rounded-full bg-white border text-sm">System Administration</span>
+                    <span class="px-3 py-1 rounded-full bg-white border text-sm">3D Modelling</span>
+                    <span class="px-3 py-1 rounded-full bg-white border text-sm">Animation</span>
+                    <span class="px-3 py-1 rounded-full bg-white border text-sm">Network Maintenance</span>
+                    <span class="px-3 py-1 rounded-full bg-white border text-sm">Hardware Support</span>
+                    <span class="px-3 py-1 rounded-full bg-white border text-sm">GPS Fleet Logistics</span>
+                    <span class="px-3 py-1 rounded-full bg-white border text-sm">Data Management</span>
+                    <span class="px-3 py-1 rounded-full bg-white border text-sm">Technical Support</span>
+                    <span class="px-3 py-1 rounded-full bg-white border text-sm">Cross-functional Collaboration</span>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-indigo-600 font-bold text-lg uppercase tracking-wide mb-3">Education & Certifications</h2>
+                <div class="space-y-4 text-sm">
+                    <div>
+                        <p class="font-semibold">B.Sc. Computer Science</p>
+                        <p>Unity University</p>
+                        <p>Graduated: Feb 15, 2021</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Mobile Maintenance Certification</p>
+                        <p>Satcom Institute of Technology</p>
+                        <p>Jun 27, 2024</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Computer Maintenance Certification</p>
+                        <p>Satcom Institute of Technology</p>
+                        <p>Jan 22, 2021</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">3D Modeling Certification</p>
+                        <p>Udemy Academy (Online)</p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Right Column -->
+        <main class="md:col-span-7 p-8">
+            <header class="mb-8">
+                <h1 class="text-4xl font-extrabold text-slate-900">NATHENAEL MAMO GEBEYEHU</h1>
+                <p class="text-xl text-slate-600 mt-1">Computer Science Professional | Systems Administrator | UI/UX Designer</p>
+            </header>
+
+            <section class="mb-8">
+                <h2 class="text-indigo-600 font-bold text-lg uppercase tracking-wide mb-3">Professional Summary</h2>
+                <p class="text-slate-700 leading-relaxed">
+                    Versatile and adaptive Computer Science professional with experience spanning systems administration,
+                    UI/UX design, and logistics technology operations. Proven ability to manage mission-critical tracking
+                    systems, maintain technical infrastructure, and collaborate across departments to improve operational performance.
+                    Rapid learner with a strong track record of adopting new technologies, solving technical challenges,
+                    and delivering reliable results in fast-paced environments.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-indigo-600 font-bold text-lg uppercase tracking-wide mb-5">Professional Experience</h2>
+
+                <div class="mb-6">
+                    <h3 class="font-bold text-lg">GPS Tracking Supervisor & Dispatcher</h3>
+                    <p class="text-slate-600">Bulk Fuel Transportation Company (International) | May 2024 – May 2026</p>
+                    <ul class="list-disc ml-6 mt-2 space-y-2 text-slate-700">
+                        <li>Supervised high-stakes GPS fleet logistics and tracking operations across bulk fuel transportation networks.</li>
+                        <li>Ensured operational security, efficiency, and regulatory compliance throughout transit activities.</li>
+                        <li>Coordinated communication between drivers, dispatch teams, and management to reduce delays and improve delivery performance.</li>
+                        <li>Monitored fleet movement data and provided rapid operational decision support during critical events.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="font-bold text-lg">GPS Controller</h3>
+                    <p class="text-slate-600">Bulk Fuel Transportation Company (International) | May 2023 – Feb 2024</p>
+                    <ul class="list-disc ml-6 mt-2 space-y-2 text-slate-700">
+                        <li>Monitored real-time tracking systems for transportation assets and field operations.</li>
+                        <li>Troubleshot communication and hardware issues affecting long-haul transport units.</li>
+                        <li>Maintained accurate operational records and supported dispatch coordination.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="font-bold text-lg">System Administrator & Data Software Controller</h3>
+                    <p class="text-slate-600">Senay Medical Center | Concurrent Role</p>
+                    <ul class="list-disc ml-6 mt-2 space-y-2 text-slate-700">
+                        <li>Managed clinical data recording software while ensuring data integrity and security.</li>
+                        <li>Maintained local systems and server infrastructure to support uninterrupted operations.</li>
+                        <li>Provided end-user technical support and resolved software and hardware issues efficiently.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg">Trainee Software Engineer (UI/UX & 3D Modelling)</h3>
+                    <p class="text-slate-600">Dan Energy | Aug 2022 – May 2023</p>
+                    <ul class="list-disc ml-6 mt-2 space-y-2 text-slate-700">
+                        <li>Designed user-centered wireframes and intuitive interface concepts for software projects.</li>
+                        <li>Created 3D models and digital animations to support technical and visual development initiatives.</li>
+                        <li>Collaborated with stakeholders to improve usability and project presentation quality.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>
+"""
+
+path = "/mnt/data/Nathenael_Mamo_Resume.html"
+Path(path).write_text(html, encoding="utf-8")
+
+print(path)
